@@ -55,7 +55,7 @@ export default function FloatingCall() {
 
     sections.forEach((section) => observer.observe(section));
     return () => observer.disconnect();
-  }, []);
+  }, []); 
 
   const visible = scrolledPastHero && !nearCta;
 
