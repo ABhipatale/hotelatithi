@@ -1,9 +1,9 @@
-import { ArrowUp, MapPin, Phone } from "lucide-react";
+import { ArrowUp, MapPin, Phone, Smartphone } from "lucide-react";
 
 import Logo from "./Logo";
 import Marquee from "./ui/Marquee";
 import { InstagramIcon, FacebookIcon, WhatsappIcon } from "./ui/BrandIcons";
-import { SITE } from "../data/siteData";
+import { DEVELOPER, SITE } from "../data/siteData";
 
 const QUICK_LINKS = [
   { id: "home", label: "Home" },
@@ -44,7 +44,7 @@ export default function Footer() {
         />
       </div>
 
-      <div className="shell relative py-14 lg:py-20">
+      <div className="shell relative pb-8 pt-14 lg:pb-10 lg:pt-20">
         <div className="grid gap-10 lg:grid-cols-[1.4fr_0.8fr_0.8fr_1.1fr] lg:gap-8">
           {/* brand */}
           <div>
@@ -148,6 +148,37 @@ export default function Footer() {
           >
             Back to top
             <ArrowUp className="size-3.5 transition-transform duration-300 group-hover:-translate-y-0.5" />
+          </a>
+        </div>
+      </div>
+
+      {/* Build credit — a tight full-width band pinned to the very bottom, not
+          a row inside the padded column above, which left a deep empty gap
+          beneath it. The studio name carries the link, so the bare URL was one
+          redundant item in an already small strip. */}
+      <div className="relative border-t border-cream/10">
+        <div className="shell flex flex-wrap items-center justify-center gap-x-4 gap-y-1 py-3 text-center text-xs text-cream/70">
+          <p>
+            Designed &amp; developed by{" "}
+            <a
+              href={DEVELOPER.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-cream/85 underline-offset-2 transition-colors hover:text-saffron hover:underline"
+            >
+              {DEVELOPER.name}
+            </a>
+          </p>
+
+          <span aria-hidden="true" className="h-3 w-px bg-cream/20" />
+
+          <a
+            href={DEVELOPER.phoneHref}
+            className="inline-flex items-center gap-1.5 tabular-nums transition-colors hover:text-saffron"
+          >
+            <Smartphone className="size-3.5 shrink-0" aria-hidden="true" />
+            <span className="sr-only">Call {DEVELOPER.name} on </span>
+            {DEVELOPER.phone}
           </a>
         </div>
       </div>

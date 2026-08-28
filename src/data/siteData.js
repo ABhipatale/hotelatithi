@@ -80,6 +80,14 @@ export const OWNER = {
   ],
 };
 
+/** Who built the site. Sits in its own strip at the very foot of the page. */
+export const DEVELOPER = {
+  name: "ABtech Solution",
+  phone: "7666287015",
+  phoneHref: "tel:+917666287015",
+  url: "https://abtechservices.store/",
+};
+
 export const NAV_LINKS = [
   { id: "home", labelEn: "Home", labelMr: "मुख्यपृष्ठ" },
   { id: "signature", labelEn: "Specials", labelMr: "खासियत" },
