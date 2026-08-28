@@ -4,8 +4,15 @@ import { Phone } from "lucide-react";
 import { WhatsappIcon } from "./ui/BrandIcons";
 import { SITE } from "../data/siteData";
 
-/** Sections that already put a phone number and a primary CTA on screen. */
-const REDUNDANT_SECTIONS = ["reservation", "contact"];
+/**
+ * Regions that already put a phone number and a primary CTA on screen.
+ *
+ * "site-footer" is an id rather than a `footer` tag lookup: the testimonial and
+ * owner quotes each carry their own <footer> for the attribution, which is
+ * correct HTML, so querySelector("footer") matched a 65px quote credit near the
+ * top of the page instead of the real one.
+ */
+const REDUNDANT_SECTIONS = ["reservation", "contact", "site-footer"];
 
 /**
  * Persistent call / WhatsApp affordance. Most guests land here on a phone, so
@@ -29,12 +36,9 @@ export default function FloatingCall() {
   // Step aside for the booking form and contact card — otherwise the pill can
   // land on top of the "Book My Table" button at tablet widths.
   useEffect(() => {
-    // The footer carries the phone number too, and the pill was landing on top
-    // of the build credit at the very bottom of the page.
-    const sections = [
-      ...REDUNDANT_SECTIONS.map((id) => document.getElementById(id)),
-      document.querySelector("footer"),
-    ].filter(Boolean);
+    const sections = REDUNDANT_SECTIONS.map((id) => document.getElementById(id)).filter(
+      Boolean
+    );
     if (!sections.length) return;
 
     const seen = new Set();

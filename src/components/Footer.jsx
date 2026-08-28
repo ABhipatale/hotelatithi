@@ -33,7 +33,7 @@ const TICKER = [SITE.tagline, "जत्रा धनगरी थाळी", "|
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-maroon-2 text-cream">
+    <footer id="site-footer" className="relative overflow-hidden bg-maroon-2 text-cream">
       {/* ticker cap */}
       <div className="relative border-b border-cream/10 grad-ember">
         <Marquee
