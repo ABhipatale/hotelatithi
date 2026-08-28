@@ -29,17 +29,20 @@ export default function FloatingCall() {
   // Step aside for the booking form and contact card — otherwise the pill can
   // land on top of the "Book My Table" button at tablet widths.
   useEffect(() => {
-    const sections = REDUNDANT_SECTIONS.map((id) => document.getElementById(id)).filter(
-      Boolean
-    );
+    // The footer carries the phone number too, and the pill was landing on top
+    // of the build credit at the very bottom of the page.
+    const sections = [
+      ...REDUNDANT_SECTIONS.map((id) => document.getElementById(id)),
+      document.querySelector("footer"),
+    ].filter(Boolean);
     if (!sections.length) return;
 
     const seen = new Set();
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) seen.add(entry.target.id);
-          else seen.delete(entry.target.id);
+          if (entry.isIntersecting) seen.add(entry.target);
+          else seen.delete(entry.target);
         });
         setNearCta(seen.size > 0);
       },
