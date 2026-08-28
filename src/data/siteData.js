@@ -21,9 +21,9 @@ export const SITE = {
     "जत्रा धनगरी थाळी, गावरान मटण हंडी आणि चुलीवरची चव — व्हेज आणि नॉनव्हेज, दोन्ही एकाच ठिकाणी.",
 
   // from the signboard
-  phone: "+91 99296 67979",
-  phoneHref: "tel:+919929667979",
-  whatsappHref: "https://wa.me/919929667979",
+  phone: "+91 89992 44403",
+  phoneHref: "tel:+918999244403",
+  whatsappHref: "https://wa.me/918999244403",
 
   // TODO: the hotel has not supplied an email address. Leave this null until
   // there is a real, monitored inbox — the contact card and the schema both
@@ -57,7 +57,7 @@ export const SITE = {
     instagram: "https://instagram.com/hotelatithi_",
     instagramHandle: "@hotelatithi_",
     facebook: "https://facebook.com/",
-    whatsapp: "https://wa.me/919929667979",
+    whatsapp: "https://wa.me/918999244403",
   },
 };
 

@@ -35,7 +35,7 @@ cards and table card:
 |---|---|
 | Tagline — गावाकडची माणसं... गावाकडची चव..! | signboard, `exterior-front.webp` |
 | फॅमिली गार्डन रेस्टॉरंट · व्हेज / नॉनव्हेज | signboard |
-| Phone 9929667979 | signboard |
+| Phone 8999244403 | supplied by the hotel — note the signboard photograph still shows the older number 9929667979 |
 | Instagram `@hotelatithi_` | table card, `card-jatra-dhangari.webp` |
 | **जत्रा धनगरी थाळी (मटण/चिकन)** and **जत्रा धनगरी हंडी** | table card |
 | "कमी कालावधीत प्रसिद्ध झालेले थाळी" | table card |
