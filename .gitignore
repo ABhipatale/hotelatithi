@@ -1,0 +1,34 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Scratch output from the screenshot/audit tooling — never source
+.shots
+
+# Never publish: unlicensed Adobe Stock comp (watermarked, asset #153571595).
+# Kept on disk so a licensed replacement can be dropped in, never committed.
+src/assets/hero4.jpg
+
+# Stray browser print-to-PDF of an unrelated product demo, not a site asset
+src/assets/ABBIZ*.pdf
