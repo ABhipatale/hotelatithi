@@ -259,9 +259,16 @@
 /* ------------------------------------------------------------------
    Scroll reveal — plain IntersectionObserver + CSS so the animation
    costs no JavaScript at runtime.
+
+   Every rule that HIDES an element is scoped to `.js`, which an inline
+   script in index.html adds to <html> before first paint. Without
+   scripting — a crawler that reads CSS, a reader with JS off, or the
+   split second before the bundle boots — the content is simply visible.
+   Unscoped, the prerendered HTML would ship 127 elements at opacity 0,
+   and hidden text is text a renderer is entitled to discount.
 ------------------------------------------------------------------ */
 @layer components {
-  [data-reveal] {
+  .js [data-reveal] {
     --ease: cubic-bezier(0.22, 1, 0.36, 1);
     opacity: 0;
     transition:
@@ -273,11 +280,11 @@
   }
 
   /* default: lift into place */
-  [data-reveal="up"] {
+  .js [data-reveal="up"] {
     transform: translate3d(var(--rx, 0), var(--ry, 26px), 0);
   }
   /* grow: for seals and badges */
-  [data-reveal="scale"] {
+  .js [data-reveal="scale"] {
     transform: scale(var(--rs, 0.9));
   }
   /* wipe: a line of type slides up from behind its own edge.
@@ -294,7 +301,7 @@
     padding-block: 0.34em;
     margin-block: -0.34em;
   }
-  [data-reveal="clip"] > * {
+  .js [data-reveal="clip"] > * {
     transform: translate3d(0, 108%, 0);
     transition: transform 0.95s var(--ease);
     transition-delay: var(--rd, 0ms);
@@ -303,12 +310,12 @@
     transform: none;
   }
   /* focus-in: headline flourishes */
-  [data-reveal="blur"] {
+  .js [data-reveal="blur"] {
     filter: blur(14px);
     transform: translate3d(0, var(--ry, 18px), 0) scale(1.02);
   }
 
-  [data-reveal].revealed {
+  .js [data-reveal].revealed {
     opacity: 1;
     transform: none;
     filter: none;
@@ -316,8 +323,8 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
-    [data-reveal],
-    [data-reveal="clip"] > * {
+    .js [data-reveal],
+    .js [data-reveal="clip"] > * {
       opacity: 1;
       transform: none;
       filter: none;

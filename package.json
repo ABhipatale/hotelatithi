@@ -5,12 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/prerender.cjs",
+    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node scripts/prerender.cjs",
     "lint": "oxlint",
     "preview": "vite preview",
     "audit": "node scripts/audit.cjs",
-    "build:only": "vite build",
-    "prerender": "node scripts/prerender.cjs"
+    "prerender": "node scripts/prerender.cjs",
+    "build:client": "vite build"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
