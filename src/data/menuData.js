@@ -1,7 +1,17 @@
 import { IMAGES } from "./images";
 
 /**
- * Dishes and prices transcribed from the hotel's own menu cards
+ * The photographed dishes shown as picture cards.
+ *
+ * Prices here are reconciled against the printed card in
+ * `public/menu-card-hotel-atithi.pdf` wherever it names the same dish. Six did
+ * not match and were corrected. Several cards below are NOT on that card at
+ * all — कांदा भजी, भजी प्लेट, कांदा पोहे, स्पेशल चहा, मटण मसालेदारी and
+ * मटण थाळी विथ सोलकढी — so their prices are unverified; and the card prices
+ * जत्रा धनगरी थाळी only as स्पेशल मटण धनगरी थाळी at ₹360, not ₹240. The hotel
+ * needs to confirm those before launch. `fullMenuData.js` is the authority.
+ *
+ * Originally transcribed from the hotel's own menu cards
  * (src/assets/menucard-*.webp).
  *
  * Only dishes we hold a genuine photograph of appear as picture cards — the
@@ -43,7 +53,7 @@ export const MENU_ITEMS = [
     nameMr: "मटण थाळी",
     nameEn: "Mutton Thali",
     descMr: "तांबडा रस्सा, सुक्कं, भाकरी, भात आणि ताक",
-    price: 240,
+    price: 350,
     category: "thali",
     // Two full thalis with the taak the description promises. Replaces the
     // studio cut-out, whose flat yellow backdrop bled into the card corners
@@ -81,7 +91,7 @@ export const MENU_ITEMS = [
     nameMr: "स्पेशल पिठलं थाळी",
     nameEn: "Special Pithla Thali",
     descMr: "पिठलं-भाकरी, ठेचा, कांदा, लोणचं आणि ताक भात",
-    price: 160,
+    price: 200,
     category: "thali",
     image: IMAGES.thaliVegTaak,
     badge: "गावरान",
@@ -94,8 +104,8 @@ export const MENU_ITEMS = [
     nameMr: "मटण हंडी",
     nameEn: "Mutton Handi",
     descMr: "गावरान मसाल्यातील दाट रस्सा, सोबत बटर नान",
-    price: 350,
-    full: 650,
+    price: 900,
+    full: 550,
     category: "mutton",
     image: IMAGES.handiNaan,
     badge: "स्पेशल",
@@ -117,8 +127,7 @@ export const MENU_ITEMS = [
     nameMr: "मटण सुक्का",
     nameEn: "Mutton Sukka",
     descMr: "खोबरं-मसाल्यात परतलेलं कोरडं मटण",
-    price: 300,
-    full: 600,
+    price: 240,
     category: "mutton",
     image: IMAGES.thaliMuttonTable,
     veg: false,
@@ -128,7 +137,7 @@ export const MENU_ITEMS = [
     nameMr: "खिमा पाव",
     nameEn: "Kheema Pav",
     descMr: "बारीक मटण खिमा आणि गरम पाव",
-    price: 150,
+    price: 130,
     category: "mutton",
     image: IMAGES.kheemaPav,
     veg: false,
@@ -171,7 +180,7 @@ export const MENU_ITEMS = [
     nameMr: "मसाला पापड",
     nameEn: "Masala Papad",
     descMr: "कांदा, टोमॅटो आणि शेव",
-    price: 40,
+    price: 50,
     category: "starters",
     image: IMAGES.masalaPapad,
     veg: true,

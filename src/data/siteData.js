@@ -50,7 +50,8 @@ export const SITE = {
   },
 
   // printed at the foot of the menu card
-  orderNote: "ऑर्डरनंतर ३० मिनिटे लागतील",
+  // The printed card says 25 minutes, not 30.
+  orderNote: "ऑर्डरसाठी २५ मिनिटे लागतील",
 
   social: {
     // printed on the table card

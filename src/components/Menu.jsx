@@ -7,6 +7,7 @@ import Button from "./ui/Button";
 import Reveal from "./ui/Reveal";
 import OrderButton from "./ui/OrderButton";
 import MenuCatalogue from "./MenuCatalogue";
+import PriceList from "./PriceList";
 import { MENU_CATEGORIES, MENU_ITEMS } from "../data/menuData";
 
 const PREVIEW_COUNT = 6;
@@ -217,6 +218,9 @@ export default function Menu() {
             </Button>
           </div>
         )}
+
+        {/* every dish and every price, straight off the printed card */}
+        <PriceList />
 
         {/* the hotel's own printed cards, as a catalogue */}
         <MenuCatalogue />

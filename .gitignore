@@ -38,3 +38,5 @@ src/assets/ABBIZ*.pdf
 # that belongs in the hotel's own storage, not in every clone.
 src/assets/real image/
 src/assets/*.zip
+# the menu PDF ships from public/ — no need for a second 9 MB copy
+src/assets/*.pdf
