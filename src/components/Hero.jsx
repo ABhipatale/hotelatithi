@@ -12,10 +12,10 @@ import { useMagnetic } from "../hooks/useMagnetic";
 
 /** Four backdrops that rotate behind the hero, one every six seconds. */
 const SLIDES = [
-  { src: IMAGES.heroCurryBrass, position: "object-[50%_55%]" },
-  { src: IMAGES.heroPaneerSpread, position: "object-[50%_50%]" },
-  { src: IMAGES.dishTandooriSizzler, position: "object-[50%_42%]" },
-  { src: IMAGES.thaliSolkadhi, position: "object-[50%_45%]" },
+  { src: IMAGES.thaliMuttonRassa, position: "object-[50%_58%]" },
+  { src: IMAGES.hallGuestsNight, position: "object-[50%_55%]" },
+  { src: IMAGES.thaliNonvegLarge, position: "object-[50%_58%]" },
+  { src: IMAGES.signNight, position: "object-[50%_48%]" },
 ];
 
 const TICKER = [

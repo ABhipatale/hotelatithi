@@ -34,7 +34,8 @@ export const MENU_ITEMS = [
     // crop takes almost nothing off it. The previous shot was a corner of a
     // busy table: laminated card, tissues and a steel tumbler, with the food
     // pushed to the edge of the frame.
-    image: IMAGES.thaliChapatiTop,
+    image: IMAGES.thaliNonvegLarge,
+    position: "object-[50%_62%]",
     badge: "सर्वाधिक प्रसिद्ध",
     veg: false,
   },
@@ -48,8 +49,8 @@ export const MENU_ITEMS = [
     // Two full thalis with the taak the description promises. Replaces the
     // studio cut-out, whose flat yellow backdrop bled into the card corners
     // and made it the one tile in the grid that was not a photograph.
-    image: IMAGES.guestsThaliWindow,
-    position: "object-[50%_72%]",
+    image: IMAGES.thaliMuttonSolkadhi,
+    position: "object-[50%_62%]",
     veg: false,
   },
   {
@@ -62,8 +63,8 @@ export const MENU_ITEMS = [
     // The only close-up that actually shows the solkadhi this dish is named
     // for, alongside the rassa and sukka. The previous frame was dim and the
     // solkadhi was the one thing in it you could not pick out.
-    image: IMAGES.thaliSteelCloseup,
-    position: "object-[50%_45%]",
+    image: IMAGES.thaliMuttonButter,
+    position: "object-[50%_62%]",
     veg: false,
   },
   {
@@ -73,7 +74,8 @@ export const MENU_ITEMS = [
     descMr: "पनीर मसाला, मिक्स व्हेज, डाळ, कोशिंबीर, ३ चपाती, गोड पदार्थ",
     price: 200,
     category: "thali",
-    image: IMAGES.thaliVeg,
+    image: IMAGES.thaliVegFull,
+    position: "object-[50%_62%]",
     veg: true,
   },
   {
@@ -83,7 +85,8 @@ export const MENU_ITEMS = [
     descMr: "पिठलं-भाकरी, ठेचा, कांदा, लोणचं आणि ताक भात",
     price: 160,
     category: "thali",
-    image: IMAGES.thaliVegTaak,
+    image: IMAGES.thaliBhakriTaak,
+    position: "object-[50%_62%]",
     badge: "गावरान",
     veg: true,
   },
@@ -120,7 +123,8 @@ export const MENU_ITEMS = [
     price: 300,
     full: 600,
     category: "mutton",
-    image: IMAGES.thaliMuttonTable,
+    image: IMAGES.thaliChickenSpread,
+    position: "object-[50%_62%]",
     veg: false,
   },
   {
@@ -140,7 +144,8 @@ export const MENU_ITEMS = [
     descMr: "भाकरीसोबत खाण्यासाठी खमंग मटण प्लेट",
     price: 150,
     category: "mutton",
-    image: IMAGES.thaliMuttonTop,
+    image: IMAGES.muttonFryPlate,
+    position: "object-[50%_62%]",
     veg: false,
   },
 

@@ -60,6 +60,27 @@ import kandaPohe from "../assets/kanda-pohe.webp";
 import masalaPapad from "../assets/masala-papad.webp";
 import chaha from "../assets/chaha.webp";
 
+// — the hotel's own photography, shot September 2026 —
+// Twelve thalis on the green marble table against the red brick wall, the lit
+// signboard after dark, and the hall mid-service. These are the files that let
+// the site stop leaning on sourced stock for its food photography.
+import thaliMuttonSolkadhi from "../assets/thali-mutton-solkadhi.webp";
+import thaliVegFull from "../assets/thali-veg-full.webp";
+import thaliBhakriTaak from "../assets/thali-bhakri-taak.webp";
+import thaliVegPapad from "../assets/thali-veg-papad.webp";
+import thaliMuttonButter from "../assets/thali-mutton-butter.webp";
+import muttonFryPlate from "../assets/mutton-fry-plate.webp";
+import thaliVegGreen from "../assets/thali-veg-green.webp";
+import thaliNonvegLarge from "../assets/thali-nonveg-large.webp";
+import thaliMuttonRiceReal from "../assets/thali-mutton-rice-real.webp";
+import thaliSpecialEgg from "../assets/thali-special-egg.webp";
+import thaliMuttonRassa from "../assets/thali-mutton-rassa.webp";
+import thaliChickenSpread from "../assets/thali-chicken-spread.webp";
+import signNeonCloseup from "../assets/sign-neon-closeup.webp";
+import signNight from "../assets/sign-night.webp";
+import hallGuestsNight from "../assets/hall-guests-night.webp";
+import hallGuestsWide from "../assets/hall-guests-wide.webp";
+
 // — menu cards —
 import menucardVeg1 from "../assets/menucard-veg-1.webp";
 import menucardVeg2 from "../assets/menucard-veg-2.webp";
@@ -123,6 +144,24 @@ export const IMAGES = {
   kandaPohe,
   masalaPapad,
   chaha,
+
+  // the hotel's own, September 2026
+  thaliMuttonSolkadhi,
+  thaliVegFull,
+  thaliBhakriTaak,
+  thaliVegPapad,
+  thaliMuttonButter,
+  muttonFryPlate,
+  thaliVegGreen,
+  thaliNonvegLarge,
+  thaliMuttonRiceReal,
+  thaliSpecialEgg,
+  thaliMuttonRassa,
+  thaliChickenSpread,
+  signNeonCloseup,
+  signNight,
+  hallGuestsNight,
+  hallGuestsWide,
 
   // menu cards
   menucardVeg1,

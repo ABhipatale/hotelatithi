@@ -32,3 +32,9 @@ src/assets/hero4.jpg
 
 # Stray browser print-to-PDF of an unrelated product demo, not a site asset
 src/assets/ABBIZ*.pdf
+
+# Camera originals and converter dumps. The optimised .webp derivatives in
+# src/assets are what the site imports; these are 90+ MB of source material
+# that belongs in the hotel's own storage, not in every clone.
+src/assets/real image/
+src/assets/*.zip

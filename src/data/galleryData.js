@@ -18,4 +18,12 @@ export const GALLERY_ITEMS = [
   { id: "g10", image: IMAGES.thaliVeg, span: "normal", captionMr: "व्हेज थाळी", alt: "Vegetarian thali with chapati, rice and dal" },
   { id: "g11", image: IMAGES.exteriorParking, span: "normal", captionMr: "प्रशस्त पार्किंग", alt: "Covered parking in front of Hotel Atithi" },
   { id: "g12", image: IMAGES.chaha, span: "normal", captionMr: "कडक स्पेशल चहा", alt: "Two steel cups of strong masala tea" },
+  { id: "g13", image: IMAGES.signNight, span: "tall", captionMr: "रात्रीची आमची पाटी", alt: "The illuminated Hotel Atithi signboard at night" },
+  { id: "g14", image: IMAGES.hallGuestsNight, span: "wide", captionMr: "संध्याकाळची गर्दी", alt: "Guests dining in the covered hall at Hotel Atithi in the evening" },
+  { id: "g15", image: IMAGES.hallGuestsWide, span: "normal", captionMr: "प्रशस्त बैठक व्यवस्था", alt: "Wide view of the busy dining hall at Hotel Atithi" },
+  { id: "g16", image: IMAGES.signNeonCloseup, span: "normal", captionMr: "हॉटेल अतिथी", alt: "Close-up of the lit Hotel Atithi sign with veg and non-veg marks" },
+  { id: "g17", image: IMAGES.thaliSpecialEgg, span: "normal", captionMr: "स्पेशल थाळी", alt: "A loaded special thali with egg curry, rice and bhakri" },
+  { id: "g18", image: IMAGES.thaliMuttonRiceReal, span: "normal", captionMr: "मटण थाळी", alt: "Mutton thali with rassa, sukka, rice and bhakri" },
+  { id: "g19", image: IMAGES.thaliVegGreen, span: "normal", captionMr: "व्हेज थाळी", alt: "Vegetarian thali with mixed vegetables, dal and solkadhi" },
+  { id: "g20", image: IMAGES.thaliVegPapad, span: "normal", captionMr: "ताजं व्हेज जेवण", alt: "Vegetarian thali with papad, chapati and curries" },
 ];

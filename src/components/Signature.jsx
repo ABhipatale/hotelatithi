@@ -86,7 +86,7 @@ export default function Signature() {
                         fit={dish.fit ?? "cover"}
                         imgClassName={`rounded-full transition-transform duration-[1300ms] ease-out group-hover:scale-110 ${
                           dish.fit === "contain" ? "p-1" : ""
-                        }`}
+                        } ${dish.position ?? ""}`}
                       />
                     </div>
                   </div>
