@@ -23,10 +23,12 @@ run it before shipping.
 
 ## Where the content comes from
 
-**The copy and the photography are both the hotel's own.** Sixteen photographs
-shot on site in September 2026 now carry the hero, the signature medallions,
-every thali on the menu grid and eight gallery tiles. The seven sourced stock
-images this file used to warn about are no longer referenced anywhere.
+**The copy is entirely the hotel's own. The photography is mixed.** Sixteen
+photographs shot on site in September 2026 fill the gallery and one hero slide.
+The hero, the signature medallions and the menu grid still run on sourced stock
+images — that was a deliberate choice on the grounds that they look better; one
+of them is flagged AI-generated in its own metadata. The table below records
+what is verified; the sections after it record what is not.
 
 Every fact and every line of copy is taken from the hotel's signboard, menu
 cards and table card:
@@ -62,25 +64,39 @@ are what the site imports, and there is no reason to put 64 MB in every clone.
 | `sign-night.webp`, `sign-neon-closeup.webp` | the lit signboard after dark | hero, gallery |
 | `hall-guests-night.webp`, `hall-guests-wide.webp` | the hall mid-service, guests eating | hero, gallery |
 
-### Retired: seven sourced stock images
+### ⚠️ Seven rendered images are sourced stock, not the hotel's plates
 
-Until September 2026 the hero and three menu cards ran on stock re-encodes of
-`hero2`/`hero3` and the hash-named JPEGs. One of them,
-`76e5ea5beec2a4792a49f797ab712ea6.jpg`, declares itself AI-generated — its XMP
+The hero, the signature medallions and three menu cards run on stock re-encodes
+of `hero2`/`hero3` and the hash-named JPEGs. Each pair was matched by dHash over
+a 16x16 greyscale downscale; 0-2 out of 256 bits means the same picture
+re-encoded, and every unrelated pair in the folder scores above 40.
+
+| Rendered file | Sourced from | Distance | Used in |
+|---|---|---|---|
+| `hero-curry-brass.webp` | `hero2.jpg` | 1 | hero slideshow |
+| `hero-paneer-spread.webp` | `hero3.jpg` | 2 | hero slideshow |
+| `dish-tandoori-sizzler.webp` | `c777201985...jpg` | 0 | hero slideshow |
+| `hero-mutton-bowl.webp` | `76e5ea5bee...jpg` | 1 | signature medallion |
+| `thali-chapati-top.webp` | `a1d821fa23...jpg` | 0 | menu — जत्रा धनगरी थाळी |
+| `guests-thali-window.webp` | `973ff6bc6d...jpg` | 0 | menu — मटण थाळी |
+| `thali-steel-closeup.webp` | `98cbbb61b6...jpg` | 0 | menu — मटण थाळी विथ सोलकढी |
+
+**`76e5ea5beec2a4792a49f797ab712ea6.jpg` declares itself AI-generated.** Its XMP
 carries the IPTC code for synthetic media:
 
 ```
-DigitalSourceType → http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia
+DigitalSourceType -> http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia
 ```
 
-It was the source of `hero-mutton-bowl.webp`, which sat in a signature medallion
-— a dish that has never existed, shown as a plate this kitchen serves.
+It is the source of `hero-mutton-bowl.webp`, which sits in the signature
+medallion. A dish that has never existed is shown as a plate this kitchen
+serves.
 
-**None of these seven are referenced by the site any more.** The files are still
-in `src/assets/` and can be deleted once you are sure nothing else wants them:
-`hero-curry-brass`, `hero-paneer-spread`, `dish-tandoori-sizzler`,
-`hero-mutton-bowl`, `thali-chapati-top`, `guests-thali-window`,
-`thali-steel-closeup` (plus `hero-mutton-rice`, never imported).
+These were briefly replaced with the hotel's own photographs and then restored,
+because the stock frames were judged to look better. The hotel's own equivalents
+are all present in `src/assets/` and wired into the gallery, so swapping back is
+a one-line change per placement in `menuData.js` / `signatureData.js` / `Hero.jsx`.
+**Before launch someone should still establish a licence for these seven files.**
 
 ### ⚠️ `hero4.jpg` was a watermarked Adobe Stock comp and has been removed
 

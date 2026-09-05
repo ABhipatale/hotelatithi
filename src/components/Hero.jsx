@@ -10,12 +10,15 @@ import { SITE } from "../data/siteData";
 import { useParallax } from "../hooks/useParallax";
 import { useMagnetic } from "../hooks/useMagnetic";
 
-/** Four backdrops that rotate behind the hero, one every six seconds. */
+/** Five backdrops that rotate behind the hero, one every six seconds. */
 const SLIDES = [
-  { src: IMAGES.thaliMuttonRassa, position: "object-[50%_58%]" },
+  { src: IMAGES.heroCurryBrass, position: "object-[50%_55%]" },
+  { src: IMAGES.heroPaneerSpread, position: "object-[50%_50%]" },
+  { src: IMAGES.dishTandooriSizzler, position: "object-[50%_42%]" },
+  { src: IMAGES.thaliSolkadhi, position: "object-[50%_45%]" },
+  // The hall mid-service — the only slide that shows the place rather than a
+  // plate, and the only one that is the hotel's own photograph.
   { src: IMAGES.hallGuestsNight, position: "object-[50%_55%]" },
-  { src: IMAGES.thaliNonvegLarge, position: "object-[50%_58%]" },
-  { src: IMAGES.signNight, position: "object-[50%_48%]" },
 ];
 
 const TICKER = [

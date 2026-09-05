@@ -30,8 +30,7 @@ export const SIGNATURES = [
       "सर्वांना आवडणारी हंडी — गावरान मसाल्यात मंद आचेवर शिजवलेलं मटण, सोबत बटर नान.",
     price: 350,
     priceNote: "हाफ / फुल ६५०",
-    image: IMAGES.thaliMuttonRassa,
-    position: "object-[50%_58%]",
+    image: IMAGES.heroMuttonBowl,
     tagMr: "सर्वांना आवडणारी",
   },
   {
@@ -42,8 +41,7 @@ export const SIGNATURES = [
       "तांबडा रस्सा, सुक्कं मटण, कोशिंबीर, ताक आणि गरम ज्वारीची भाकरी — पूर्ण गावाकडचं जेवण.",
     price: 240,
     priceNote: "चिकन थाळी ₹180",
-    image: IMAGES.thaliMuttonSolkadhi,
-    position: "object-[50%_58%]",
+    image: IMAGES.thaliMuttonTop,
     tagMr: "गावाकडची चव",
   },
 ];
