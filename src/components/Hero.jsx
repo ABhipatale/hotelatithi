@@ -87,18 +87,19 @@ export default function Hero() {
               thing a stranger to Karad needs. It carries the Roman spelling
               too — plenty of locals search and read in Roman script, and
               nothing else on the page is written that way. */}
-          <Reveal variant="up" delay={140} y={14}>
-            <p className="mt-6 font-mr-ui text-sm font-semibold tracking-wide text-amber sm:text-base">
-              हॉटेल अतिथी · Hotel Atithi, Karad
-            </p>
-          </Reveal>
-
-          <Reveal variant="clip" delay={200}>
-            <h1 className="mt-2 font-marathi text-[clamp(2.4rem,7.4vw,4.75rem)] leading-[1.28] text-cream drop-shadow-[0_3px_18px_rgba(0,0,0,0.55)]">
-              अस्सल गावरान चवीची{" "}
-              <span className="mt-1 block text-saffron">जत्रा धनगरी थाळी</span>
-            </h1>
-          </Reveal>
+          <h1>
+            <Reveal as="span" variant="up" delay={140} y={14} className="block">
+              <span className="mt-6 block font-mr-ui text-sm font-semibold tracking-wide text-amber sm:text-base">
+                हॉटेल अतिथी · Hotel Atithi, Karad
+              </span>
+            </Reveal>{" "}
+            <Reveal as="span" variant="clip" delay={200} className="block">
+              <span className="mt-2 block font-marathi text-[clamp(2.4rem,7.4vw,4.75rem)] leading-[1.28] text-cream drop-shadow-[0_3px_18px_rgba(0,0,0,0.55)]">
+                अस्सल गावरान चवीची{" "}
+                <span className="mt-1 block text-saffron">जत्रा धनगरी थाळी</span>
+              </span>
+            </Reveal>
+          </h1>
 
           <Reveal variant="up" delay={360}>
             <p className="mx-auto mt-6 max-w-xl font-mr-ui text-base leading-relaxed text-cream/90 sm:text-lg">

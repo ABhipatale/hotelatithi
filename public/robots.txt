@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hotelatithikarad.in/sitemap.xml
+Sitemap: https://www.hotelatithikarad.in/sitemap.xml

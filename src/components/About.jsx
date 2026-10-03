@@ -89,7 +89,7 @@ export default function About() {
             <Reveal className="col-span-3" y={40}>
               <SmartImage
                 src={IMAGES.exteriorFront}
-                alt="Front of Hotel Atithi family garden restaurant"
+                alt="Front of Hotel Atithi, a family garden restaurant in Karad"
                 className="arch-soft shadow-lift ring-4 ring-white"
                 ratio="4 / 5"
               />
